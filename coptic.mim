@@ -5,18 +5,11 @@
 
 (title "Coptic")
 
-;; This map is based on a transliteration table in Loprieno's excellent
-;; book on Ancient Egyptian.  As such, it covers mostly just enough Coptic
-;; to be used with that book.  I would love to upgrade this to the point
-;; that's its useful for people whose primary interest is Coptic, but baby
-;; steps!  All suggestions will be accepted with gratitude and considered
-;; carefully.
+;; Coptic input method for Ibus.
+;; The original was found at https://github.com/emk/ibus-ancient and modified to
+;; include the supralinear stroke over consonents.
 ;;
-;; Some good ideas for further refinements can be found here:
-;; http://www.wazu.jp/gallery/Test_Coptic.html
-;;
-;; Also, I have no idea about what's going on with capitals / lowercase
-;; in Coptic.
+;; To install in many Linux variants, put in /usr/share/m17n/ .
 
 (map
   (trans
@@ -24,64 +17,110 @@
    ("a" "ⲁ")
    ("A" "Ⲁ")
    ("b" "ⲃ")
+   ("b~" "ⲃ︦")	;; Added by DEReese 20180503.
    ("B" "Ⲃ")
+   ("B~" "Ⲃ︦")	;; Added by DEReese 20180503.
    ("g" "ⲅ")
+   ("g~" "ⲅ︦")	;; Added by DEReese 20180503.
    ("G" "Ⲅ")
+   ("G~" "Ⲅ︦")	;; Added by DEReese 20180503.
    ("d" "ⲇ")
+   ("d~" "ⲇ︦")	;; Added by DEReese 20180503.
    ("D" "Ⲇ")
+   ("D~" "Ⲇ︦")	;; Added by DEReese 20180503.
    ("e" "ⲉ")
    ("E" "Ⲉ")
    ("z" "ⲍ")
+   ("z~" "ⲍ︦")	;; Added by DEReese 20180503.
    ("Z" "Ⲍ")
+   ("Z~" "Ⲍ︦")	;; Added by DEReese 20180503.
    ("e^" "ⲏ") ;; ê
    ("E^" "Ⲏ") ;; Ê
    ("th" "ⲑ")
+   ("th~" "ⲑ︦")	;; Added by DEReese 20180503.
    ("TH" "Ⲑ")
+   ("TH~" "Ⲑ︦")	;; Added by DEReese 20180503.
    ("i" "ⲓ")
    ("I" "Ⲓ")
    ("k" "ⲕ")
+   ("k~" "ⲕ︦")	;; Added by DEReese 20180503.
    ("K" "Ⲕ")
+   ("K~" "Ⲕ︦")	;; Added by DEReese 20180503.
    ("l" "ⲗ")
+   ("l~" "ⲗ︦")	;; Added by DEReese 20180503.
    ("L" "Ⲗ")
+   ("L~" "Ⲗ︦")	;; Added by DEReese 20180503.
    ("m" "ⲙ")
+   ("m~" "ⲙ︦")	;; Added by DEReese 20180503.
    ("M" "Ⲙ")
+   ("M~" "Ⲙ︦")	;; Added by DEReese 20180503.
    ("n" "ⲛ")
+   ("n~" "ⲛ︦")	;; Added by DEReese 20180503.
    ("N" "Ⲛ")
+   ("N~" "Ⲛ︦")	;; Added by DEReese 20180503.
    ("o" "ⲟ")
    ("Ⲟ" "Ⲟ")
    ("p" "ⲡ")
+   ("p~" "ⲡ︦")	;; Added by DEReese 20180503.
    ("P" "Ⲡ")
+   ("P~" "Ⲡ︦")	;; Added by DEReese 20180503.
    ("r" "ⲣ")
+   ("r~" "ⲣ︦")	;; Added by DEReese  20180503.
    ("R" "Ⲣ")
+   ("R~" "Ⲣ︦")	;; Added by DEReese  20180503.
    ("s" "ⲥ")
+   ("s~" "ⲥ︦")	;; Added by DEReese 20180503.
    ("S" "Ⲥ")
+   ("S~" "Ⲥ︦")	;; Added by DEReese 20180503.
    ("t" "ⲧ")
+   ("t~" "ⲧ︦")	;; Added by DEReese 20180503.
    ("T" "Ⲧ")
+   ("T~" "Ⲧ︦")	;; Added by DEReese 20180503.
    ("u" "ⲩ")
    ("U" "Ⲩ")
    ("ph" "ⲫ")
+   ("ph~" "ⲫ︦")	;; Added by DEReese 20180503.
    ("PH" "Ⲫ")
+   ("PH~" "Ⲫ︦")	;; Added by DEReese 20180503.
    ("kh" "ⲭ")
+   ("kh~" "ⲭ︦")	;; Added by DEReese 20180503.
    ("KH" "Ⲭ")
+   ("KH~" "Ⲭ︦")	;; Added by DEReese 20180503.
    ("ps" "ⲯ")
+   ("ps~" "ⲯ︦")	;; Added by DEReese 20180503.
    ("PS" "Ⲯ")
+   ("PS~" "Ⲯ︦")	;; Added by DEReese 20180503.
    ("o^" "ⲱ") ;; ô
    ("O^" "Ⲱ") ;; Ô
    ;; Adapted to Coptic.
    ("s^" "ϣ") ;; š
+   ("s^~" "ϣ︦") ;; š	;; Added by DEReese 20180503.
    ("S^" "Ϣ") ;; Š
+   ("S^~" "Ϣ︦") ;; Š	;; Added by DEReese 20180503.
    ("f" "ϥ")
+   ("f~" "ϥ︦")	;; Added by DEReese 20180503.
    ("F" "Ϥ")
+   ("F~" "Ϥ︦")	;; Added by DEReese 20180503.
    ("x" "ϧ")
+   ("x~" "ϧ︦")	;; Added by DEReese 20180503.
    ("X" "Ϧ")
+   ("X~" "Ϧ︦")	;; Added by DEReese 20180503.
    ("h" "ϩ")
+   ("h~" "ϩ︦")	;; Added by DEReese 20180503.
    ("H" "Ϩ")
+   ("H~" "Ϩ︦")	;; Added by DEReese 20180503.
    ("j" "ϫ")
+   ("j~" "ϫ︦")	;; Added by DEReese 20180503.
    ("J" "Ϫ")
+   ("J~" "Ϫ︦")	;; Added by DEReese 20180503.
    ("c" "ϭ")
+   ("c~" "ϭ︦")	;; Added by DEReese 20180503.
    ("C" "Ϭ")
+   ("C~" "Ϭ︦")	;; Added to DEReese 20180503.
    ("ti" "ϯ")
+   ("ti~" "ϯ︦")	;; Added by DEReese 20180503.
    ("TI" "Ϯ")
+   ("TI~" "Ϯ︦")	;; Added by DEReese 20180503.
    ))
 
 (state
