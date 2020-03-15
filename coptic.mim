@@ -9,7 +9,7 @@
 ;; The original was found at https://github.com/emk/ibus-ancient and modified to
 ;; include the supralinear stroke over consonents.
 ;;
-;; To install in many Linux variants, put in /usr/share/m17n/ .
+;; To install in many Linux variants, put in ~/.m17n.d .
 
 (map
   (trans
