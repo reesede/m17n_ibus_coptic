@@ -17,4 +17,5 @@ method should show up in Preferences->Input Method->Add->Other->coptic (m17n).
 20180504	DEReese		Published to GitHub with supralinear strokes.
 20200314	DEReese		Changed recommended installation directory from
 				/usr/share/m17n to ~/.m17n.d.
+20210126	DEReese		Added ks.
 
